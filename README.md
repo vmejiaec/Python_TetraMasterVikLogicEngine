@@ -28,6 +28,7 @@ La fórmula para generar la tabla se basa en multiplicar por 16 el valor, y así
 
 $$
 \begin{array}{lcl}
+v & = & 0,1,2, ... , 14, 15, 16 \\
 min & = & 16 \cdot v  \\
 max & = & 16 \cdot (v+1)  -1    
 \end{array}

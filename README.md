@@ -24,6 +24,15 @@ Los puntos que le corresponden son:
 | E     | 224    | 239    |
 | F     | 240    | 255    |
 
+La fórmula para generar la tabla se basa en multiplicar por 16 el valor, y así los rangos mínimo y máximo se dan por:
+
+$$
+\begin{array}{lcl}
+min & = & 16 \cdot v  \\
+max & = & 16 \cdot (v+1)  -1    
+\end{array}
+$$
+
 ## Pantalla Selector de cartas
 Al inicio el jugador debe elegir cinco cartas de  su mazo, en la siguiente pantalla
 ![Selector de cartas](img/SelectorDeCartas.png)

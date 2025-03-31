@@ -1,17 +1,11 @@
-from engine.core import Game
-from engine.adapters.pygame_event_source import PygameEventSource
-from engine.adapters.pygame_time import PygameTime
-from engine.adapters.pygame_renderer import PygameRenderer
-from engine.adapters.pygame_rect import PygameRect
-from engine.player import Player
+from logicengine import Carta
 
 def main():
-    time_manager = PygameTime()
-    event_source = PygameEventSource()
-    renderer = PygameRenderer()
-    player = Player(PygameRect(100,100,30,30),speed=5)
-    game = Game(player, renderer, time_manager, event_source)
-    game.run()
+    cartaA = Carta(1, "Carta A", 10, 5, 3, 2, [1, 0, 0, 0])
+    cartaB = Carta(2, "Carta B", 8, 7, 4, 1, [0, 1, 0, 0])
+
+    print(cartaA)  # Output: (1) Carta A (AP: 10, AT: 5, PD: 3, MD: 2, Flechas: [1, 0, 0, 0])
+    print(cartaB)  # Output: (2) Carta B (AP: 8, AT: 7, PD: 4, MD: 1, Flechas: [0, 1, 0, 0])
 
 if __name__ == "__main__":
     main()
